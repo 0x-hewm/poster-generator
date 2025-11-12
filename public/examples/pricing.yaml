@@ -1,0 +1,85 @@
+# 定价方案海报
+
+meta:
+  title: "云服务定价"
+  width: 400
+  theme: "corporate"
+
+sections:
+  - type: "title"
+    content: "云服务定价方案"
+
+  - type: "section"
+    title: "简单透明的定价"
+    content: "无隐藏费用，按需付费，随时可升级或降级，让您的业务更灵活。"
+
+  - type: "pricing"
+    tiers:
+      - name: "个人版"
+        price: "¥0"
+        features:
+          - "1 GB 存储空间"
+          - "10 GB 流量/月"
+          - "基础功能"
+          - "社区支持"
+          - "99.9% SLA"
+
+      - name: "专业版"
+        badge: "推荐"
+        highlight: true
+        price: "¥199/月"
+        oldPrice: "¥299/月"
+        features:
+          - "50 GB 存储空间"
+          - "500 GB 流量/月"
+          - "全部功能"
+          - "邮件支持"
+          - "99.95% SLA"
+          - "免费备份"
+
+      - name: "企业版"
+        price: "¥999/月"
+        features:
+          - "500 GB 存储空间"
+          - "5 TB 流量/月"
+          - "企业级功能"
+          - "7x24 支持"
+          - "99.99% SLA"
+          - "自动备份"
+          - "专属客户经理"
+
+      - name: "旗舰版"
+        price: "定制"
+        features:
+          - "无限存储空间"
+          - "无限流量"
+          - "定制化开发"
+          - "私有部署"
+          - "100% SLA"
+          - "技术团队支持"
+
+  - type: "section"
+    title: "所有方案均包含"
+    items:
+      - "✅ SSL 证书"
+      - "✅ CDN 加速"
+      - "✅ DDoS 防护"
+      - "✅ 自动扩展"
+      - "✅ 数据加密"
+      - "✅ API 访问"
+
+  - type: "section"
+    title: "常见问题"
+    subsections:
+      - subtitle: "如何升级？"
+        content: "随时在控制面板升级，费用按天计算。"
+
+      - subtitle: "是否有年付优惠？"
+        content: "年付享受2个月免费，相当于8.3折。"
+
+      - subtitle: "退款政策？"
+        content: "7天无理由退款，超出部分按使用时间计费。"
+
+  - type: "note"
+    content: "新用户注册即送 ¥50 代金券，有效期30天！"
+    muted: false

@@ -1,0 +1,95 @@
+# 个人简历海报
+
+meta:
+  title: "张伟 - 全栈工程师"
+  width: 400
+  theme: "minimal"
+
+sections:
+  - type: "title"
+    content: "张伟"
+
+  - type: "section"
+    title: "全栈工程师"
+    content: "5年+ Web 开发经验，精通前后端技术栈，热爱开源，追求代码质量与用户体验。"
+
+  - type: "section"
+    title: "联系方式"
+    items:
+      - "📧 Email: zhangwei@example.com"
+      - "📱 Phone: 138-0000-0000"
+      - "🔗 GitHub: github.com/zhangwei"
+      - "💼 LinkedIn: linkedin.com/in/zhangwei"
+
+  - type: "section"
+    title: "技能专长"
+    subsections:
+      - subtitle: "前端技术"
+        items:
+          - "React / Vue / Next.js"
+          - "TypeScript / JavaScript"
+          - "Tailwind CSS / Sass"
+          - "Webpack / Vite"
+
+      - subtitle: "后端技术"
+        items:
+          - "Node.js / Python"
+          - "Express / FastAPI"
+          - "PostgreSQL / MongoDB"
+          - "Redis / Docker"
+
+      - subtitle: "其他技能"
+        items:
+          - "Git / CI/CD"
+          - "AWS / 阿里云"
+          - "微服务架构"
+          - "性能优化"
+
+  - type: "section"
+    title: "工作经历"
+    subsections:
+      - subtitle: "某科技公司 · 高级工程师"
+        description: "2021.06 - 至今"
+        items:
+          - "负责核心产品前端架构设计与开发"
+          - "主导技术选型，提升开发效率 40%"
+          - "指导初级工程师，建立代码规范"
+
+      - subtitle: "某互联网公司 · 全栈工程师"
+        description: "2019.03 - 2021.05"
+        items:
+          - "独立完成多个项目的全栈开发"
+          - "优化系统性能，响应时间降低 50%"
+          - "参与开源项目，贡献代码 1000+ commits"
+
+  - type: "section"
+    title: "项目经验"
+    subsections:
+      - subtitle: "电商平台"
+        items:
+          - "技术栈：React + Node.js + MongoDB"
+          - "支持日活 10w+ 用户"
+          - "实现完整的购物流程与支付系统"
+
+      - subtitle: "数据可视化平台"
+        items:
+          - "技术栈：Vue + D3.js + Python"
+          - "处理百万级数据实时展示"
+          - "提供灵活的自定义配置"
+
+  - type: "section"
+    title: "教育背景"
+    items:
+      - "🎓 某大学 · 计算机科学与技术 · 本科"
+      - "📅 2015.09 - 2019.06"
+
+  - type: "section"
+    title: "荣誉证书"
+    items:
+      - "🏆 公司年度最佳员工 (2022)"
+      - "🏆 黑客马拉松一等奖 (2021)"
+      - "📜 AWS 认证架构师"
+
+  - type: "note"
+    content: "期待与优秀的团队一起创造价值！"
+    muted: true

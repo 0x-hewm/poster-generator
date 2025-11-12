@@ -1,0 +1,73 @@
+# 公告通知海报
+
+meta:
+  title: "系统升级公告"
+  width: 400
+  theme: "ocean"
+
+sections:
+  - type: "title"
+    content: "系统升级公告"
+
+  - type: "section"
+    title: "升级时间"
+    items:
+      - "📅 日期：2024年11月20日"
+      - "🕐 时间：02:00 - 06:00 (GMT+8)"
+      - "⏱️ 预计时长：4小时"
+      - "🌍 影响范围：全球所有用户"
+
+  - type: "section"
+    title: "升级内容"
+    subsections:
+      - subtitle: "新功能"
+        items:
+          - "✨ 全新的用户界面设计"
+          - "🚀 性能提升 50%"
+          - "📱 移动端体验优化"
+          - "🔔 实时通知功能"
+
+      - subtitle: "优化改进"
+        items:
+          - "🐛 修复已知问题 20+ 个"
+          - "🔒 增强安全防护"
+          - "💾 数据库性能优化"
+          - "🌐 CDN 节点扩展"
+
+      - subtitle: "API 变更"
+        items:
+          - "⚠️ 旧版 API 将于下月废弃"
+          - "📖 请参考新版文档升级"
+          - "🔧 提供迁移工具"
+
+  - type: "section"
+    title: "升级期间"
+    items:
+      - "❌ 服务将暂时不可用"
+      - "💾 请提前保存您的工作"
+      - "📧 重要通知将发送至邮箱"
+      - "🔄 系统将自动恢复服务"
+
+  - type: "section"
+    title: "注意事项"
+    items:
+      - "1. 升级完成后需重新登录"
+      - "2. 部分功能使用方式有变化"
+      - "3. 建议清除浏览器缓存"
+      - "4. 如遇问题请联系客服"
+
+  - type: "section"
+    title: "联系支持"
+    items:
+      - "📧 邮箱：support@example.com"
+      - "💬 在线客服：09:00-22:00"
+      - "📞 热线：400-888-8888"
+      - "📱 微信公众号：XXX服务号"
+
+  - type: "note"
+    content: "感谢您的理解与支持，我们将持续为您提供更好的服务！"
+    muted: false
+
+  - type: "note"
+    content: "本公告最终解释权归平台所有。"
+    muted: true

@@ -1,0 +1,26 @@
+# 简单示例 - 不指定主题，使用界面选择器切换
+
+meta:
+  title: "简单海报示例"
+  width: 400
+  # theme 字段省略，使用默认主题或界面选择器切换
+
+sections:
+  - type: "title"
+    content: "欢迎使用海报生成器"
+
+  - type: "section"
+    title: "主要功能"
+    items:
+      - "✨ YAML 配置驱动"
+      - "🎨 多主题支持"
+      - "📤 多格式导出"
+      - "👁️ 实时预览"
+
+  - type: "section"
+    title: "使用说明"
+    content: "编辑左侧的 YAML 配置，右侧会实时预览效果。点击上方的主题选择器可以切换不同主题风格。"
+
+  - type: "note"
+    content: "💡 提示：本示例没有设置 theme 字段，您可以自由使用主题选择器切换主题！"
+    muted: false

@@ -1,0 +1,84 @@
+# 产品介绍海报
+
+meta:
+  title: "AI 写作助手"
+  width: 400
+  theme: "tech"
+
+sections:
+  - type: "title"
+    content: "AI 写作助手"
+
+  - type: "section"
+    title: "产品简介"
+    content: "基于最新 GPT-4 技术的智能写作工具，帮助您快速生成高质量内容，提升写作效率 10 倍以上。"
+
+  - type: "section"
+    title: "核心功能"
+    items:
+      - "📝 智能创作：一键生成文章、报告、方案"
+      - "✨ 内容优化：自动润色、改写、扩写"
+      - "🎯 SEO 优化：智能关键词布局"
+      - "🌍 多语言支持：支持 50+ 种语言"
+      - "📊 数据分析：内容质量评分与建议"
+
+  - type: "section"
+    title: "适用场景"
+    subsections:
+      - subtitle: "内容创作者"
+        items:
+          - "自媒体文章写作"
+          - "视频脚本创作"
+          - "社交媒体内容"
+
+      - subtitle: "企业用户"
+        items:
+          - "商业计划书"
+          - "产品说明文档"
+          - "营销文案"
+
+      - subtitle: "学生群体"
+        items:
+          - "论文写作辅助"
+          - "报告撰写"
+          - "学习笔记整理"
+
+  - type: "section"
+    title: "技术优势"
+    items:
+      - "🚀 响应速度：平均 2 秒生成内容"
+      - "🎨 创意质量：通过率 95% 以上"
+      - "🔒 数据安全：企业级加密保护"
+      - "💡 持续更新：每月新增功能"
+
+  - type: "pricing"
+    title: "价格方案"
+    tiers:
+      - name: "免费版"
+        price: "¥0"
+        features:
+          - "每日 10 次生成"
+          - "基础功能"
+          - "社区支持"
+
+      - name: "专业版"
+        badge: "热门"
+        highlight: true
+        price: "¥99/月"
+        features:
+          - "无限次生成"
+          - "全部功能"
+          - "优先客服"
+          - "API 接口"
+
+      - name: "企业版"
+        price: "¥999/月"
+        features:
+          - "专业版所有功能"
+          - "团队协作"
+          - "定制化服务"
+          - "专属客户经理"
+
+  - type: "note"
+    content: "现在注册即送 100 次免费生成额度！"
+    muted: false

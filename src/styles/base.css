@@ -1,0 +1,299 @@
+/* 基础样式 */
+/* 应用界面不使用 CSS 变量，使用固定颜色，避免被海报主题影响 */
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+body {
+  background: #f1f5f9;
+  color: #0f172a;
+}
+
+/* 主布局 */
+.app {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* 编辑器区域 - 固定暗色主题 */
+.editor-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid #3e3e3e;
+  background: #1e1e1e;
+}
+
+.editor-header {
+  padding: 12px 16px;
+  background: #2d2d2d;
+  border-bottom: 1px solid #3e3e3e;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.editor-header h2 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #cccccc;
+}
+
+.editor-header select {
+  padding: 6px 12px;
+  border: 1px solid #3e3e3e;
+  border-radius: 4px;
+  background: #1e1e1e;
+  color: #cccccc;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.editor-header select:hover {
+  background: #2d2d2d;
+  border-color: #4f46e5;
+}
+
+.editor-header select:focus {
+  outline: none;
+  border-color: #4f46e5;
+}
+
+.editor-content {
+  flex: 1;
+  overflow: hidden;
+}
+
+#yaml-editor {
+  width: 100%;
+  height: 100%;
+  font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+  font-size: 14px;
+  line-height: 1.6;
+  padding: 16px;
+  border: none;
+  outline: none;
+  resize: none;
+  background: #1e1e1e;
+  color: #d4d4d4;
+  tab-size: 2;
+}
+
+#yaml-editor::placeholder {
+  color: #6a6a6a;
+}
+
+#yaml-editor::-webkit-scrollbar {
+  width: 12px;
+}
+
+#yaml-editor::-webkit-scrollbar-track {
+  background: #1e1e1e;
+}
+
+#yaml-editor::-webkit-scrollbar-thumb {
+  background: #3e3e3e;
+  border-radius: 6px;
+}
+
+#yaml-editor::-webkit-scrollbar-thumb:hover {
+  background: #4e4e4e;
+}
+
+/* 预览区域 - 固定亮色主题 */
+.preview-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: #f1f5f9;
+}
+
+.preview-header {
+  padding: 12px 16px;
+  background: white;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.preview-header h2 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #0f172a;
+  flex: 1;
+}
+
+.preview-header button {
+  padding: 8px 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  background: white;
+  color: #0f172a;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.preview-header button:hover {
+  background: #f8fafc;
+  border-color: #4f46e5;
+  color: #4f46e5;
+}
+
+.preview-header button:active {
+  transform: scale(0.98);
+}
+
+.preview-header button.primary {
+  background: #4f46e5;
+  border-color: #4f46e5;
+  color: white;
+}
+
+.preview-header button.primary:hover {
+  background: #4338ca;
+  border-color: #4338ca;
+  color: white;
+}
+
+.preview-header .theme-selector {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.preview-header .theme-selector label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #475569;
+}
+
+.preview-header .theme-selector select {
+  padding: 6px 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  background: white;
+  color: #0f172a;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.preview-header .theme-selector select:hover {
+  border-color: #4f46e5;
+}
+
+.preview-header .theme-selector select:focus {
+  outline: none;
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+}
+
+.preview-content {
+  flex: 1;
+  overflow: auto;
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.preview-content::-webkit-scrollbar {
+  width: 12px;
+}
+
+.preview-content::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+.preview-content::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 6px;
+}
+
+.preview-content::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+.poster-container {
+  display: inline-block;
+}
+
+/* 错误提示 */
+.error-message {
+  margin: 24px;
+  padding: 16px;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  color: #991b1b;
+  font-size: 14px;
+}
+
+.error-message strong {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+/* 加载状态 */
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: var(--fg-sub);
+  font-size: 14px;
+}
+
+/* 打印样式 */
+@media print {
+  .editor-panel,
+  .preview-header {
+    display: none !important;
+  }
+  
+  .preview-panel {
+    background: white;
+  }
+  
+  .preview-content {
+    padding: 0;
+  }
+  
+  .poster {
+    border: none !important;
+    box-shadow: none !important;
+  }
+}
+
+/* 响应式 */
+@media (max-width: 1024px) {
+  .app {
+    flex-direction: column;
+  }
+  
+  .editor-panel {
+    height: 40vh;
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+  }
+  
+  .preview-panel {
+    height: 60vh;
+  }
+}

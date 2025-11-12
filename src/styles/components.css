@@ -1,0 +1,282 @@
+/* 海报组件样式 */
+.poster {
+  width: 400px;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  overflow: hidden;
+  background: var(--bg);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+}
+
+.inner {
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* 标题 */
+h1 {
+  margin: 4px 0 2px;
+  font-size: 28px;
+  line-height: 1.1;
+  font-weight: 900;
+  letter-spacing: -0.01em;
+  color: var(--fg);
+}
+
+h2 {
+  margin: 10px 0 6px;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--fg);
+}
+
+h3 {
+  margin: 8px 0 4px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--fg);
+}
+
+/* 段落和列表 */
+p {
+  margin: 4px 0;
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--fg);
+}
+
+ul {
+  margin: 4px 0;
+  padding-left: 18px;
+}
+
+li {
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--fg);
+  margin: 2px 0;
+}
+
+/* 区块 */
+.section {
+  border: 1px solid var(--border);
+  background: var(--card);
+  border-radius: 12px;
+  padding: 12px;
+}
+
+/* 弱化文本 */
+.muted {
+  color: var(--fg-sub) !important;
+}
+
+/* 定价模块 */
+.tier {
+  border: 1px dashed var(--border);
+  border-radius: 12px;
+  padding: 10px;
+  background: var(--bg);
+  margin-top: 8px;
+}
+
+.tier.highlight {
+  border-color: var(--accent);
+  /* 使用半透明背景代替 color-mix，兼容 html2canvas */
+  background: var(--bg);
+  box-shadow: inset 0 0 0 1px var(--accent), 0 0 20px rgba(79, 70, 229, 0.08);
+  border-width: 2px;
+  position: relative;
+}
+
+.tier.highlight::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--accent);
+  opacity: 0.04;
+  pointer-events: none;
+  border-radius: 10px;
+}
+
+.tier .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.tier .left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tier .name {
+  font-weight: 800;
+  font-size: 15px;
+  color: var(--fg);
+}
+
+.tier .badge {
+  font-size: 11px;
+  padding: 2px 6px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: white;
+  font-weight: 600;
+}
+
+.tier .pricewrap {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+  line-height: 1;
+}
+
+.tier .price-old {
+  font-size: 12px;
+  text-decoration: line-through;
+  color: var(--fg-sub);
+  opacity: 0.9;
+}
+
+.tier .price-new {
+  font-size: 24px;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  color: var(--accent);
+}
+
+.tier ul {
+  margin: 0;
+  padding-left: 16px;
+}
+
+.tier li {
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+/* 小字体 */
+.small {
+  font-size: 12px;
+}
+
+/* 强调 */
+strong {
+  font-weight: 700;
+  color: var(--fg);
+}
+
+/* 链接 */
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* 代码 */
+code {
+  padding: 2px 6px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  font-size: 12px;
+  font-family: 'Consolas', 'Monaco', monospace;
+}
+
+/* 分隔线 */
+hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 12px 0;
+}
+
+/* 图片 */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* 按钮样式（用于海报内） */
+.btn {
+  display: inline-block;
+  padding: 8px 16px;
+  background: var(--accent);
+  color: white;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn:hover {
+  /* 使用 filter 代替 color-mix，兼容 html2canvas */
+  filter: brightness(0.92);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* 标签 */
+.tag {
+  display: inline-block;
+  padding: 4px 8px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--fg-sub);
+  margin: 2px 4px 2px 0;
+}
+
+/* 卡片网格 */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.grid-item {
+  padding: 10px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 12px;
+}
+
+/* 进度条 */
+.progress {
+  height: 6px;
+  background: var(--border);
+  border-radius: 3px;
+  overflow: hidden;
+  margin: 8px 0;
+}
+
+.progress-bar {
+  height: 100%;
+  background: var(--accent);
+  transition: width 0.3s;
+}
+
+/* 引用 */
+blockquote {
+  margin: 8px 0;
+  padding: 8px 12px;
+  border-left: 3px solid var(--accent);
+  background: var(--card);
+  font-style: italic;
+  color: var(--fg-sub);
+}
